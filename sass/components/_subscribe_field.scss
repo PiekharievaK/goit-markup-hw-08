@@ -1,0 +1,20 @@
+.button--subscribe {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .button__content {
+    margin-right: 10px;
+  }
+  
+  .button__icon{
+    fill: currentColor;
+  }
+  
+  .subscribe__field::placeholder {
+    color: $footer-text-color;
+  }
+  
+  .subscribe__form{
+    display: flex;
+  }

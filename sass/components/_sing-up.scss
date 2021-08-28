@@ -1,0 +1,142 @@
+.singup-form {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .modal__title {
+    margin-bottom: 12px;
+    text-align: center;
+    @include font-style ( 700,  20px, 1.15, 0.03em,  $title-color);
+    // font-weight: 700;
+    // font-size: 20px;
+    // line-height: 1.15;
+    // letter-spacing: 0.03em;
+    // color: $title-color;
+  }
+  
+  .inform {
+  
+    margin-bottom: 10px;
+
+    &:last-child{
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  .input__field {
+    height: 40px;
+    padding-left: 35px;
+    cursor: pointer;
+  }
+  
+  .inform__lable{
+      display: block;
+      margin-bottom: 4px;
+  }
+  
+  .input__field,
+  .inform__comment-field::placeholder{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+  
+  .input {
+      position: relative;
+      display: inline-block;
+    
+  }
+  
+  .input__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill: $title-color;
+    transform: translateY(-50%);
+    transition-property: fill;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+  
+  
+  
+  .input__field,
+  .inform__comment-field {
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  
+    transition-property: border-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+  
+  
+  .input__field:focus,
+  .inform__comment-field:focus{
+    border-color: $accent-color;
+    outline: none;
+  }
+  
+  .input__field:focus + .input__icon {
+    fill: $accent-color;
+  }
+  
+  .text-area{
+      margin-bottom: 20px;
+  
+  }
+  
+  .inform__comment-field {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .inform__comment-field::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  
+  .agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+  .hide-checkbox {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  
+  .hide-checkbox:focus + .agreement__checkbox {
+    border: 3px solid $title-color;
+  }
+  
+  .form__submit {
+    display: block;
+    margin: auto;
+  
+  }
+  .agreement__checkbox {
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 2px solid $title-color;
+    border-radius: 2px;
+    transition-property: fill, $background-color, border ;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+  
+  .hide-checkbox:checked + .agreement__checkbox {
+    border: none;
+    fill: $accent-text-color; 
+    background-color: $accent-color;
+  }

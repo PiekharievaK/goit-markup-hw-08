@@ -1,0 +1,26 @@
+$title-color: #212121;
+$main-text-color: #757575;
+$accent-color: #2196f3;
+$accent-text-color: #ffffff;
+$accent-backgraund: #f5f4fa;
+$hero-button-hover: #188ce8;
+$dark-background-collor: #2f303a;
+$background-color: #ffffff;
+$border-color: #eeeeee;
+$clients-icon-color: #afb1b8;
+$card-thumb-overflow-color: rgba(33, 150, 243, 0.8);
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$backdrop: rgba(0, 0, 0, 0.2);
+$duration: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$modal-fill-border: rgba(33, 33, 33, 0.2);
+
+ @mixin font-style ( $weight: 400px, $size: 14px, $height: 1.71, $letter-spacing: 0.03em, $color: ($main-text-color))  {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $letter-spacing;
+    // text-transform:$transform;
+    // text-decoration: $text-decoration;
+    color: $color;
+ }

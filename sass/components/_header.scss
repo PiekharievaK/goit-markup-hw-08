@@ -1,0 +1,9 @@
+.header {
+    height: 80px;
+    border-bottom: 1px solid $border-color;
+  }
+  .conteiner--header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
