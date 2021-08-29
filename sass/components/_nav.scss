@@ -1,9 +1,15 @@
 .nav {
+  @media screen and (min-width: 480px) {
+  
     display: flex;
-    align-items: center;
+    align-items: center;}
   }
   .nav__list {
-    display: flex;
+    @media screen and (min-width: 480px) {
+  
+      display: flex;
+      align-items: center;
+    display: flex;}
   }
 
    .nav__link {
@@ -29,15 +35,18 @@
     position: relative;
     color: $accent-color;
 
-    &::after {
-      position: absolute;
-      bottom: -24px;
-      display: block;
-      height: 4px;
-      width: 100%;
-      content: "";
-      border-radius: 2px;
-      background-color: $accent-color;}
+    @media screen and (min-width: 480px) {
+   
+      &::after {
+        position: absolute;
+        bottom: -24px;
+        display: block;
+        height: 4px;
+        width: 100%;
+        content: "";
+        border-radius: 2px;
+        background-color: $accent-color;}
+      }
   }
   
   // .nav__link:hover,

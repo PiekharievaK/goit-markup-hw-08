@@ -26,10 +26,23 @@
       <!-- section-header -->
       <div class="conteiner--header container" >
         <!-- header__container -->
-          
+        <a href="./" lang="en" class="logo"> <span class="logo__color"> Web</span>Studio</a> 
+
+        <button type="button" class="menu-toggle js-open-menu " aria-expanded="false" aria-controls="mobile-menu"> 
+          <svg width="24px" height="16px" class="menu-toggle__icon">
+            <use href="./images/symbol.svg#menu-open"></use>
+          </svg>
+        </button>
+
+        
+          <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu " aria-expanded="false" aria-controls="mobile-menu"> 
+              <svg width="18px" height="18px" class="menu-toggle__icon">
+                <use href="./images/symbol.svg#icon-close"></use>
+              </svg>
+            </button>
           <nav class="nav"> 
-              <a href="./" lang="en" class="logo"> <span class="logo__color"> Web</span>Studio</a> 
-              <ul class="nav__list list"> <!-- class="nav__list" -->
+              <ul class="nav__list "> <!-- class="nav__list" -->
                   <li class="nav__item"><a href="./index.html" class="nav__link   nav__link--current" >Студия</a></li>
                   <li class="nav__item"><a href="./portfolio.html" class="nav__link" >Портфолио</a></li>
                   <li class="nav__item"><a href="#" class="nav__link" >Контакты</a></li>
@@ -46,6 +59,7 @@
                       </svg> +38 096 111 11 11</a>
               </li>
           </ul>
+        </div>
       </div>
   
   
@@ -127,7 +141,7 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class=" section--no-padding-top section">  
+      <section class=" section--no-padding-top section tablet-hide" >  
         <!-- section--no-padding-top -->
         <div class=" container"> 
           <h2 class="section__title">Чем мы занимаемся</h2> 
@@ -361,7 +375,7 @@
 
       <section class="section">
         <div class="container"> 
-          <h2 class="section-title"> Постоянные клиенты </h2> 
+          <h2 class="section__title"> Постоянные клиенты </h2> 
           <ul class="clients"> 
             <li class="clients__item"> 
               <a href="" class="clients__link" aria-label="company">

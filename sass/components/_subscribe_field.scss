@@ -16,5 +16,8 @@
   }
   
   .subscribe__form{
-    display: flex;
+    @media screen and (min-width:480px) {
+      display: flex;
+      
+    }
   }

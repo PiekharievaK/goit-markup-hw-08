@@ -1,9 +1,21 @@
 .header {
-    height: 80px;
-    border-bottom: 1px solid $border-color;
+
+  height: 60px;
+ border-bottom: 1px solid $border-color;
+
+ @media screen  and (min-width: 768px){
+  height: 80px;
   }
+}
   .conteiner--header {
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
+    @media screen  and (max-width: 479px){
+      justify-content: space-between;}
+      
+      @media screen  and (min-width: 1200px){
+ 
   }
+}
+
