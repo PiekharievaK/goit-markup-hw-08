@@ -874,10 +874,9 @@ a {
   .clients__item:nth-child(-n+3) {
     margin-bottom: 30px;
   }
-}
-
-.clients__item:nth-child(3n+3) {
-  margin-right: 0px;
+  .clients__item:nth-child(-n+3):nth-child(3n+3) {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 767px) {
