@@ -1139,7 +1139,6 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  padding: 93px 15px;
   border-radius: 4px;
   background-color: #ffffff;
   -webkit-transition-property: -webkit-transform;
