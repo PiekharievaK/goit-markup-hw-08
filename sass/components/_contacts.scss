@@ -1,9 +1,13 @@
 .contacts {
-  @media screen and (min-width: 767px){
-    
-    display: flex;
-    margin-left: auto;
+  display: flex;
+  @media screen and (min-width: 479px) and (max-width:767px){
+      flex-direction: column;
+
   }
+}
+.is-open> .contacts{
+  display: flex;
+  flex-direction: column;
 }
   .contacts__link {
     display: flex;
@@ -26,5 +30,6 @@
   }
   
   .contacts__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 768px){
+    margin-right: 50px;}
   }

@@ -1,13 +1,16 @@
 .mobile-menu{
-    @media screen and (max-width: 479px){
+      @media screen and (max-width: 479px){
 display: none;}
 @media screen and (min-width: 480px) {
-  display: flex;}
+  display: flex;
+  justify-content: space-between;
+flex-grow: 1;}
 }
 .mobile-menu.is-open{
   display: block;
       @media screen and (max-width: 479px){
       position: absolute;
+      z-index: 1;
       top: 0%;
       left: 0%;
       width: 100%;
