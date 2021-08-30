@@ -70,8 +70,13 @@ background-color: transparent;
     
   .social__link {
     width: unset;
-    display: inline-block; }
+    display: inline-block; 
   }
+  }
+}
+.social__item:not(:last-child) {
+  .social__link{
+  margin-right: 5px;}
 }
 
 .social__text{
@@ -83,6 +88,7 @@ font-weight: 700;
 line-height: 1.17;
 color: $accent-color;
 border-right: 1px solid $modal-fill-border;
+
 @media (min-width: 480px) {
   display: none;
   }

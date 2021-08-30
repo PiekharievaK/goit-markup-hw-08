@@ -289,6 +289,10 @@ a {
   display: inline-block;
 }
 
+.social__item:not(:last-child) .social__link {
+  margin-right: 5px;
+}
+
 .social__text {
   display: inline-block;
   padding-right: 5px;
