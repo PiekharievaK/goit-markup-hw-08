@@ -1107,7 +1107,17 @@ a {
   display: flex;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 479px) and (max-width: 767px) {
+  .footer__box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 479px) {
   .footer__box {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1133,8 +1143,17 @@ a {
   background-color: #2f303a;
 }
 
-.footer__contacts {
-  width: 100%;
+@media (max-width: 479px) {
+  .footer__contacts {
+    width: 100%;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+  .footer__contacts {
+    -ms-flex-preferred-size: calc((100% - 50px) / 2);
+        flex-basis: calc((100% - 50px) / 2);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1206,13 +1225,25 @@ a {
 }
 
 .join-us {
-  width: 100%;
   margin-bottom: 60px;
+}
+
+@media (max-width: 479px) {
+  .join-us {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
   .join-us {
     text-align: center;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .join-us {
+    -ms-flex-preferred-size: calc((100% - 50px) / 2);
+        flex-basis: calc((100% - 50px) / 2);
   }
 }
 
@@ -1278,9 +1309,16 @@ a {
   background-color: #2196f3;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .subscribe {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe {
+    width: 50%;
+    margin: auto;
     text-align: center;
   }
 }
@@ -1327,7 +1365,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .subscribe__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1692,9 +1730,16 @@ a {
   background-color: #2196f3;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .subscribe {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe {
+    width: 50%;
+    margin: auto;
     text-align: center;
   }
 }
@@ -1741,7 +1786,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .subscribe__form {
     display: -webkit-box;
     display: -ms-flexbox;

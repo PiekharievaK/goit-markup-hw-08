@@ -1,6 +1,10 @@
 .footer__box {
   display: flex;
-  @media (max-width: 767px) { 
+  @media (min-width:479px) and (max-width: 767px){
+    justify-content: space-between;
+    flex-wrap: wrap;
+     }
+  @media (max-width: 479px) { 
     align-items: center;
     flex-direction: column;}
     

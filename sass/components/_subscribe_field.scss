@@ -1,8 +1,12 @@
 .subscribe{
-  @media (max-width: 767px) {
-     width: 100%;
+  @media (max-width: 479px) {
+    width: 100%;
+    }
+    @media (max-width: 767px) {
+     width: 50%;
+     margin: auto;
       text-align: center;}
-}
+    }
 .button--subscribe {
     display: flex;
   align-items: center;
@@ -25,7 +29,7 @@
   }
   
   .subscribe__form{
-    @media  (min-width:480px) {
+    @media  (min-width:768px) {
       display: flex;
       
     }
