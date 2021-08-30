@@ -1,8 +1,8 @@
 .filter {
   display: flex;
+  flex-wrap: wrap;
   @media screen and( max-width:479px){
-  justify-content: start;
-  flex-wrap: wrap;}
+  justify-content: start;}
   @media screen and( min-width:480px) {
     justify-content: center;
     margin-bottom: 50px;}

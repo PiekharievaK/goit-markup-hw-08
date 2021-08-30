@@ -3,7 +3,7 @@
   height: 60px;
  border-bottom: 1px solid $border-color;
 
- @media screen  and (min-width: 768px){
+ @media screen  and (min-width: 480px){
   height: 80px;
   }
 }
@@ -11,10 +11,10 @@
     height: 100%;
     display: flex;
     align-items: center;
-    @media screen  and (max-width: 479px){
+    @media screen  and (max-width: 768px){
       justify-content: space-between;}
       
-      @media screen  and (min-width: 1200px){
+      @media screen  and (min-width: 768px){
  
   }
 }
