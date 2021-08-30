@@ -1,11 +1,16 @@
 .subscribe{
   @media (max-width: 479px) {
     width: 100%;
-    }
-    @media (max-width: 767px) {
-     width: 50%;
-     margin: auto;
-      text-align: center;}
+  }
+  @media (min-width:480px){
+    flex-grow: 1;
+  }
+  @media (min-width:480px) and (max-width: 767px) {
+    width: 100%;
+    margin: auto;
+  }
+  @media (max-width: 767px) {
+     text-align: center;}
     }
 .button--subscribe {
     display: flex;
@@ -34,6 +39,8 @@
       
     }
   }
+input, textarea{ overflow: scroll;}
+
   .subscribe__title {
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -46,20 +53,23 @@
   }
   
   .subscribe__field {
-    width: 100%;
+ 
+width: 75%;
 margin-bottom: 15px;
-    @media (min-width: 767px) {
-      margin-right: 12px;
-      margin-bottom: 0px;
-            
-    }
-    padding-left: 16px;
-    height: 50px;
-  
-    color: $accent-text-color;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+padding-left: 16px;
+height: 50px;
+
+color: $accent-text-color;
+background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+@media (min-width: 768px) {
+  margin-right: 12px;
+  margin-bottom: 0px;
+}
+@media (min-width: 1200px) {
+  width: 358px;
   }
+}
