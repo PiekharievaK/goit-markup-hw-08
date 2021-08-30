@@ -1,23 +1,27 @@
 .mobile-menu{
   align-items: center;
-      @media screen and (max-width: 479px){
+
+      @media  (max-width: 479px){
 display: none;}
-@media screen and (min-width: 480px) {
+@media  (min-width: 480px) {
   display: flex;
   justify-content: space-between;
 flex-grow: 1;}
 }
 .mobile-menu.is-open{
-  display: block;
-      @media screen and (max-width: 479px){
-       
-       position: absolute;
-      z-index: 1;
-      top: 0%;
-      left: 0%;
-      width: 100%;
-      height: 100vh;
-      padding: 48px 40px;
+  
+  @media  (max-width: 479px){
+    
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
 
       background-color: $background-color; }
      }
@@ -26,14 +30,14 @@ flex-grow: 1;}
   .menu-toggle{
     width: 40px;
     height: 40px;
-    @media screen and (max-width: 479px) {
+    @media  (max-width: 479px) {
       border:none;
 background-color: transparent;
 &:focus .menu-toggle__icon,
 &:hover .menu-toggle__icon{
   fill: $accent-color;}
 }
-  @media screen and(min-width:480px) {
+  @media (min-width:480px) {
     display: none;}
    
 }
@@ -42,9 +46,7 @@ background-color: transparent;
   top: 8px;
   right: 8px;
 }
-// .mobile-menu .social{
-//   display: none;}
-  
+
 .mobile-menu{
   .social{
     @media (min-width: 480px){
@@ -77,10 +79,10 @@ background-color: transparent;
   display: inline-block;
   padding-right: 5px;
 font-size: 18px;
-font-weight: 700px;
+font-weight: 700;
 line-height: 1.17;
 color: $accent-color;
-border-right: 1px solid $accent-color;
+border-right: 1px solid $modal-fill-border;
 @media (min-width: 480px) {
   display: none;
   }

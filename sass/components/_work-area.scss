@@ -10,12 +10,9 @@
   .section__title{
     margin-bottom: 50px;
     text-align: center;
-    @include font-style ( 700,  36px, 1.16, 0.03em,  $title-color);
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    // letter-spacing: 0.03em;
-    // color: $title-color;
+    @include font-style ( 700,  28px, 1.16, 0.03em,  $title-color);
+    @media (min-width: 480px) {
+      font-size: 36px;}
   }
   .work-areas__item {
     flex-basis: calc((100% - 60px) / 3);

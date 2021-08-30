@@ -1,7 +1,10 @@
 .join-us {
     height: 80px;
     width: 206px;
-    margin-right: 93px;
+    @media (max-width: 767px) { 
+    text-align: center;}
+    @media (min-width: 768px) { 
+    margin-right: 93px;}
   }
   .join-us__list {
     display: flex;

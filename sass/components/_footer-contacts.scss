@@ -1,6 +1,10 @@
 .footer__contacts {
+  @media (max-width:767px) {
+    text-align: center;
+  }
+  @media (min-width: 768px) {    
     flex-grow: 1;
-    margin-right: 70px;
+    margin-right: 70px;}
   }
 
 
@@ -33,13 +37,17 @@
 }
 .address-data__link {
   display: flex;
-  align-items: center;
   height: 16px;
   color: $main-text-color;
+  @media (max-width: 767px) { 
+  justify-content: center;}
+  @media (min-width: 768px) { 
+  align-items: center;}
  
   transition-property: color;
   transition-duration: $duration;
   transition-timing-function: $cubic;}
 
-  .address-data__link:hover, .contacts-link:focus {
+  .address-data__link:hover, 
+  .contacts-link:focus {
     color: $accent-color;}

@@ -14,7 +14,7 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     @include font-style ( 700,  14px, 1.14, 0.03em, $title-color);
-    @media screen and (max-width: 479px){
+    @media  (max-width: 479px){
       text-align: center;
     }
   
@@ -28,7 +28,7 @@
   
   .features {
     
-   @media screen and (min-width: 480px){
+   @media  (min-width: 480px){
   
     display: flex;
   flex-wrap: wrap;
@@ -36,13 +36,13 @@ justify-content: space-between; }
 }
   
   .features__item {
-    @media screen and (min-width: 480px) {
+    @media  (min-width: 480px) {
       
       flex-basis: calc((100% - 30px) / 2);
     }
     
   
- @media screen and (min-width: 768px){
+ @media  (min-width: 768px){
 
     flex-basis: calc((100% - 90px) / 4);
 
