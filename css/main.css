@@ -1379,7 +1379,7 @@ a {
 }
 
 .subscribe__field {
-  width: 75%;
+  width: 100%;
   margin-bottom: 15px;
   padding-left: 16px;
   height: 50px;
@@ -1830,7 +1830,7 @@ a {
 }
 
 .subscribe__field {
-  width: 75%;
+  width: 100%;
   margin-bottom: 15px;
   padding-left: 16px;
   height: 50px;
