@@ -7,6 +7,6 @@
   }
 
   .tablet-hide{
-    @media  and { max-width: 1199px;}
-    display: none;
-  }
+    @media ( max-width: 1199px){
+    display: none;}}
+  

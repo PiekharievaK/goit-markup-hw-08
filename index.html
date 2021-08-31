@@ -166,41 +166,47 @@
 
       <!--Чем мы занимаемся-->
       <section class=" section--no-padding-top section tablet-hide" >  
-        <!-- section--no-padding-top -->
+        <!-- section-no-padding-top -->
         <div class=" container"> 
           <h2 class="section__title">Чем мы занимаемся</h2> 
           <ul class="work-areas"> 
             <li class="work-areas__item"> 
-              <div class="work-areas__thumb"> 
+              <div class="work-areas__thumb">
+                <picture>
+                  <source srcset=" ./images/box1.jpg 1x, ./images/box1-desktop@2x.jpg 2x" media="(min-width: 1200px)" >
                 <img
-                  src="./images/box1.webp"
+                  src="./images/box1.jpg"
                   alt="руки на клавиатуре перед монитором"
                   width="370"
-                  height="294" class="work-areas__img"/>  
+                  height="294" class="work-areas__img"/>  </picture> 
                 <p class="work-areas__description">Десктопные приложения</p> 
               </div>
             </li>
             <li class="work-areas__item">
               <div class="work-areas__thumb">
+                <picture>
+                  <source srcset=" ./images/box2.jpg 1x, ./images/box2-desktop@2x.jpg 2x" media="(min-width: 1200px)" >
                 <img
-                  src="./images/box2.webp"
+                  src="./images/box2.jpg"
                   alt="женские руки держат телефон перед ноутбуком"
                   width="370"
                   height="294"
                   class="work-areas__img"
-                />
+                /> </picture>
                 <p class="work-areas__description">Мобильные приложения</p>
               </div>
             </li>
             <li class="work-areas__item">
               <div class="work-areas__thumb">
+                <picture>
+                  <source srcset=" ./images/box3.jpg 1x, ./images/box3-desktop@2x.jpg 2x" media="(min-width: 1200px)" >
                 <img
-                  src="./images/box3.webp"
+                  src="./images/box3.jpg"
                   alt="руки держат планшет с цветовой палитрой и стилус"
                   width="370"
                   height="294"
                   class="work-areas__img"
-                />
+                /> </picture>
                 <p class="work-areas__description">Дизайнерские решения</p>
               </div>
             </li>
@@ -210,17 +216,22 @@
 
       <!--Наша команда-->
       <section class="section--other-background section"> 
-        <!-- section--other-background -->
+        <!-- section-other-background -->
         <div class="container"> 
           <h2 class="section__title">Наша команда</h2> 
           <ul class="team"> 
             <li class="team__item"> 
+              <picture>
+                <source srcset=" ./images/team-card-1-mobile.jpg 1x, ./images/team-card-1-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" >
+                <source srcset=" ./images/team-card-1-tablet.jpg 1x, ./images/team-card-1-tablet@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" >
+                <source srcset=" ./images/team-card-1-desktop.jpg 1x, ./images/team-card-1-desktop@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" >
               <img
-                src="./images/img.webp"
+                src="./images/team-card-1-tablet.jpg"
                 alt="Улыбающийся мужчина с бородой и в очках"
                 width="270"
                 height="260"
-                class="team__img"/> 
+                class="team__img"/>
+               </picture>
                 
               <div class="team__box"> 
                 <h3 class="team__title">Игорь Демьяненко</h3> 
@@ -261,13 +272,17 @@
             </li>
 
             <li class="team__item">
+              <picture>
+                <source srcset=" ./images/team-card-2-mobile.jpg 1x, ./images/team-card-2-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" >
+                <source srcset=" ./images/team-card-2-tablet.jpg 1x, ./images/team-card-2-tablet@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" >
+                <source srcset=" ./images/team-card-2-desktop.jpg 1x, ./images/team-card-2-desktop@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" >
               <img
-                src="./images/img1.webp"
+                src="./images/team-card-2-tablet.jpg"
                 alt="Фото девушки в черном пиджаке и очках"
                 width="270"
                 height="260"
                 class="team__img"
-              />
+              /></picture>
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -306,13 +321,17 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source srcset=" ./images/team-card-3-mobile.jpg 1x, ./images/team-card-3-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" >
+                <source srcset=" ./images/team-card-3-tablet.jpg 1x, ./images/team-card-3-tablet@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" >
+                <source srcset=" ./images/team-card-3-desktop.jpg 1x, ./images/team-card-3-desktop@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" >
               <img
-                src="./images/img2.webp"
+                src="./images/team-card-3-tablet.jpg"
                 alt="Фото мужчины со щетиной в белой рубашке"
                 width="270"
                 height="260"
                 class="team__img"
-              />
+              /></picture>
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -351,13 +370,17 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source srcset=" ./images/team-card-4-mobile.jpg 1x, ./images/team-card-4-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" >
+                <source srcset=" ./images/team-card-4-tablet.jpg 1x, ./images/team-card-4-tablet@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" >
+                <source srcset=" ./images/team-card-4-desktop.jpg 1x, ./images/team-card-4-desktop@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" >
               <img
-                src="./images/img3.webp"
+                src="./images/team-card-4-tablet.jpg"
                 alt="Мужчина с бородой в очках и черной футболке"
                 width="270"
                 height="260"
                 class="team__img"
-              />
+              /></picture>
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
@@ -438,7 +461,7 @@
     <!-- Футер -->
 
     <footer class="footer"> 
-      <!-- section--footer -->
+      <!-- section-footer -->
       <div class="footer__box container"> 
         <div class="footer__contacts"> 
           <a href="./" lang="en" class="logo logo--footer">
