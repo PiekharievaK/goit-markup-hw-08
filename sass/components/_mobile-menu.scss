@@ -13,8 +13,7 @@ flex-grow: 1;}
   .social {
 
     @media (min-width: 768px) {
-      display: none;
-      
+      display: none;      
     }
     display: flex;
     justify-content: space-around;
@@ -23,8 +22,7 @@ flex-grow: 1;}
     
   .social__link {
     width: unset;
-    display: inline-block; 
-  }
+    display: inline-block;}
   }
 }
 .mobile-menu.is-open{
