@@ -4,7 +4,7 @@
   font-family: Raleway;
   @include font-style ( 700,  24px, 1.2, inherit, $title-color);
 
-  @media  (min-width: 480px){
+  @media  (min-width: 768px){
   flex-grow: 1;}
 
   @media  (min-width: 1200px){

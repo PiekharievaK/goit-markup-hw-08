@@ -1,9 +1,9 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  @media ( max-width:479px){
+  @media ( max-width: 767px){
   justify-content: start;}
-  @media ( min-width:480px) {
+  @media ( min-width:768px) {
     justify-content: center;
     margin-bottom: 50px;}
   }

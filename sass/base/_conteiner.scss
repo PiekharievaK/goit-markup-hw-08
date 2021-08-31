@@ -4,9 +4,13 @@
     padding: 0px 15px;
    
 
-// @media  (min-width: 768px){
-// }
-// @media  (max-width: 767px)
+@media  (min-width: 480px){
+width: 450px;
+}
+
+@media  (min-width:768px){
+  width: 738px;}
+  
 @media  (min-width: 1200px){
 
   width: 1200px;

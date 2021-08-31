@@ -1,20 +1,20 @@
 .join-us {
-  @media (max-width: 479px) {
+  @media (max-width: 767px) {
     width: 100%;
   }
   
-  @media (max-width: 767px) { 
+  @media (max-width:1199px) { 
       margin-bottom: 60px;
     text-align: center;}
-    @media (min-width:480px) and (max-width: 767px){
+    @media (min-width:768px) and (max-width:1199px){
       flex-basis: calc((100% - 50px) / 2);
        }
-    @media (min-width: 768px) { 
+    @media (min-width: 1200px) { 
     margin-right: 93px;}
   }
   .join-us__list {
     display: flex;
-    @media (max-width: 767px) {
+    @media (max-width:1199px) {
       justify-content: center;
       
     }

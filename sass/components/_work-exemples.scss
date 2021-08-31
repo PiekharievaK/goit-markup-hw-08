@@ -1,5 +1,5 @@
 .work-exemples {
-  @media ( min-width:480px) {
+  @media ( min-width:768px) {
     
     display: flex;
     flex-wrap: wrap; }
@@ -9,14 +9,14 @@
   .work-exemples__item {
     margin-bottom: 30px;
 
-       @media ( min-width:479px){
+       @media ( min-width:768px){
     flex-basis: calc((100% - 30px) / 2);}
 
    &:last-child{
      margin-bottom: 0px;
    }
 
-    @media ( min-width:767px) {
+    @media ( min-width: 1199px) {
     flex-basis: calc((100% - 60px) / 3);
       //  &:not(:last-child) {
       // margin-bottom: 30px;  
