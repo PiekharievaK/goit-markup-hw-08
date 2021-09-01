@@ -31,7 +31,6 @@
     &:focus {
       color: $accent-color;
       }
-      
   }
 
   .contacts__icon {
@@ -43,16 +42,22 @@
        }
   }
 .contacts__item:first-child{
-  @media ( max-width: 767px) {
+  @media (max-width: 767px) {
     @include font-style ( 500, 24px, 1.16, 0.02em, $main-text-color )}
   }
 
   
   .contacts__item:last-child{
       .contacts__link{
-        @media ( max-width: 767px) {
-          @include font-style ( 500, 34px, 1.16, 0.03em, $accent-color ); }
-        }}
+       @include font-style ( 500, 24px, 1.16, 0.03em, $accent-color);
+
+        @media  (min-width: 480px){
+          font-size: 34px; }
+
+          @media screen and (min-width: 768px){
+            @include font-style }
+          }
+   }
         
         
     .contacts__item:not(:last-child){

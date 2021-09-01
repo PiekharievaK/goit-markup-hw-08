@@ -283,10 +283,16 @@ a {
 }
 
 .menu-social__link {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.17;
   color: #2196f3;
+}
+
+@media (min-width: 480px) {
+  .menu-social__link {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -338,25 +344,40 @@ a {
 }
 
 .nav__link {
+  display: inline-block;
   padding: 8px 0px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
-@media (max-width: 767px) {
+.nav__link:not(::last-child) {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 479px) {
   .nav__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
   }
@@ -381,16 +402,6 @@ a {
     content: "";
     border-radius: 2px;
     background-color: #2196f3;
-  }
-}
-
-.nav__link {
-  display: inline-block;
-}
-
-@media (max-width: 767px) {
-  .nav__link:not(::last-child) {
-    margin-bottom: 32px;
   }
 }
 
@@ -482,13 +493,27 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+.contacts__item:last-child .contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+@media (min-width: 480px) {
   .contacts__item:last-child .contacts__link {
-    font-weight: 500;
     font-size: 34px;
-    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:last-child .contacts__link {
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #2196f3;
+    color: #757575;
   }
 }
 
