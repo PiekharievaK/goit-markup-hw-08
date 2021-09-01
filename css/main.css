@@ -200,12 +200,10 @@ a {
   }
 }
 
-.mobile-menu .social {
+.menu-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -213,14 +211,9 @@ a {
 }
 
 @media (min-width: 768px) {
-  .mobile-menu .social {
+  .menu-social {
     display: none;
   }
-}
-
-.mobile-menu .social .social__link {
-  width: unset;
-  display: inline-block;
 }
 
 @media (max-width: 767px) {
@@ -239,6 +232,7 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     padding: 48px 40px;
@@ -274,22 +268,26 @@ a {
   right: 8px;
 }
 
-.social__item:not(:last-child) .social__link {
-  margin-right: 5px;
+.menu-social__item {
+  width: 100%;
+  padding-right: 1%;
+  margin-right: 1%;
+  text-align: center;
 }
 
-.social__text {
-  display: inline-block;
-  padding-right: 5px;
+.menu-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__link {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   color: #2196f3;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 @media (min-width: 768px) {
-  .social__text {
+  .menu-social__link {
     display: none;
   }
 }
@@ -464,9 +462,20 @@ a {
 
 @media (min-width: 768px) {
   .contacts__icon {
-    display: unset;
+    display: initial;
     margin-right: 10px;
     fill: currentColor;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts__item:first-child {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
   }
 }
 
@@ -1473,9 +1482,9 @@ a {
 @media (max-width: 320px) {
   .modal {
     overflow: scroll;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
     height: 90%;
   }
 }
@@ -1496,9 +1505,9 @@ a {
   .modal {
     min-height: 150px;
     height: 90%;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
   }
 }
 

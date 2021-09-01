@@ -42,7 +42,11 @@
       fill: currentColor;
        }
   }
-
+.contacts__item:first-child{
+  @media ( max-width: 767px) {
+    margin-bottom: 32px;
+    @include font-style ( 500, 24px, 1.16, 0.02em, $main-text-color )}
+}
   
   .contacts__item:last-child{
       .contacts__link{
@@ -51,11 +55,7 @@
         margin-bottom: 30px;}
           }}
         
-          // .contacts{
-          //   @media (min-width: 780px) and (max-width: 1199px){
-          //   flex-grow: 0.5;
-          // justify-content: flex-end;}
-          // }
+        
     .contacts__item:not(:last-child){
       .contacts__link{
       @media  (min-width: 1200px){
