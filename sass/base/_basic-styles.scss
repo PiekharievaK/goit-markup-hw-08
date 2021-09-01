@@ -2,10 +2,7 @@ body {
   @include font-style ( 400,  14px, 1.71, 0.03em,  $main-text-color);
   font-family: "Roboto", sans-serif;
   background-color: $background-color;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
-  // color: $main-text-color;
+
 }
 ul {
     list-style: none;
@@ -25,9 +22,10 @@ a{
   text-decoration: none;
 }
 
-
-// @media  (min-width: 768px)
+//  @media  (max-width: 479px)
+// @media  (min-width: 480px)
 // @media  (max-width: 767px)
-// @media  (min-width: 1200px)
+// @media  (min-width: 768px)
 // @media  (max-width:1199px)
-// @media  (min-width: 1600px)
+// @media  (min-width: 1200px)
+

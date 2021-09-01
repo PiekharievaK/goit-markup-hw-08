@@ -7,12 +7,7 @@
     background-color: $accent-color;
     @include font-style ( 700,  16px, 1.9, 0.06em,  $accent-text-color);
     font-family: inherit;
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.9;
-    // letter-spacing: 0.6px;
-    // color: $accent-text-color;
-  
+    
     transition-property: background-color;
     transition-duration: $duration;
     transition-timing-function: $cubic;
@@ -22,17 +17,7 @@
       background-color: $hero-button-hover;
     }
   }
-  
-  // .hero__button:hover,
-  // .hero__button:focus,
-  // .form__submit:hover,
-  // .form__submit:focus,
-  // .subscribe-button:hover,
-  // .subscribe-button:focus {
-  //   background-color: $hero-button-hover;
-  // }
-  
-  
+    
   .close-button {
     position: absolute;
     top: 8px;

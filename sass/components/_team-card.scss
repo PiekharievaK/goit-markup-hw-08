@@ -13,8 +13,7 @@
   @media  (min-width:768px) and (max-width:1199px) {
 
     flex-basis: calc((100% - 30px) / 2);
-    // &:nth-child(2n+1) {
-    //   margin-right: 30px; }
+
       &:nth-child(-n+2){
         margin-bottom: 30px; }
     }
@@ -41,10 +40,7 @@
   .team__title {
     margin-bottom: 10px;
     @include font-style ( 500,  16px, 1.19, inherit,  $title-color);
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 1.19;
-    // color: $title-color;
+
   }
   .team__text {
     font-size: 16px;

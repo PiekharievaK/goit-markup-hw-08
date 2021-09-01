@@ -40,11 +40,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     @include font-style ( 700,  14px, 1.14, 0.03em,  $accent-text-color);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 16px;
-    // letter-spacing: 0.03em;
-    // color: $accent-text-color;
+   
   }
   
   .subscribe__field {

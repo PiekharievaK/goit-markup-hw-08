@@ -8,11 +8,7 @@
     margin-bottom: 12px;
     text-align: center;
     @include font-style ( 700,  20px, 1.15, 0.03em,  $title-color);
-    // font-weight: 700;
-    // font-size: 20px;
-    // line-height: 1.15;
-    // letter-spacing: 0.03em;
-    // color: $title-color;
+
   }
   
   .inform {

@@ -45,7 +45,6 @@ justify-content: initial;
     
     }
   @media  (min-width:1200px) {
-    // padding: 40px;
     max-height:581px;
     max-width:528px;
      
@@ -112,11 +111,6 @@ justify-content: initial;
   cursor: pointer;
 }
 
-// .inform__lable{
-//   @media (max-width:1199px){
-//     display: block;
-//     margin-bottom: 4px;}
-// }
 
 .input__field,
 .inform__comment-field::placeholder{
@@ -161,16 +155,6 @@ justify-content: initial;
     outline: none;}
   }
   
-// @media  (min-width: 768px){ 
-//   width: 448px;
-// }
-
-
-// .input__field:focus,
-// .inform__comment-field:focus{
-//   border-color: $accent-color;
-//   outline: none;
-// }
 
 .input__field:focus + .input__icon {
   fill: $accent-color;
