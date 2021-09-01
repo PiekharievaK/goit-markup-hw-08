@@ -43,8 +43,9 @@
        }
   }
 .contacts__item:first-child{
-
+  @media ( max-width: 767px) {
     @include font-style ( 500, 24px, 1.16, 0.02em, $main-text-color )}
+  }
 
   
   .contacts__item:last-child{
